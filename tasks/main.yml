@@ -174,7 +174,7 @@
 
 - name: Alpine init script
   template:
-    src: nomad_debian.init.j2
+    src: nomad_alpine.init.j2
     dest: /etc/init.d/nomad
     owner: root
     group: root
