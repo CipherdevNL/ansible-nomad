@@ -23,6 +23,8 @@ os_supported_matrix:
     min_version: '13.04'
   VMware Photon OS:
     min_version: '4'
+  Alpine:
+    min_version: '3.17'
 
 ## Core
 nomad_debug: false
