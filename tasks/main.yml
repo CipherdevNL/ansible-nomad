@@ -172,6 +172,15 @@
     mode: 0755
   when: not ansible_service_mgr == "systemd" and ansible_os_family == "Debian"
 
+- name: Alpine init script
+  template:
+    src: nomad_debian.init.j2
+    dest: /etc/init.d/nomad
+    owner: root
+    group: root
+    mode: 0755
+  when: not ansible_service_mgr == "systemd" and ansible_os_family == "Alpine"
+
 - name: extract systemd version
   shell: |
     set -o pipefail
