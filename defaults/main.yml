@@ -129,6 +129,7 @@ nomad_plugins: {}
 nomad_bind_address: "{{ hostvars[inventory_hostname]['ansible_'+ nomad_iface ]['ipv4']['address'] }}"
 nomad_advertise_address: "{{ hostvars[inventory_hostname]['ansible_' + nomad_iface]['ipv4']['address'] }}"
 nomad_join_addresses: ""
+nomad_server_addresses: ""
 
 ### Ports
 nomad_ports:

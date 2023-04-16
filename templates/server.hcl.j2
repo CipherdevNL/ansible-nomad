@@ -19,7 +19,7 @@ authoritative_region = "{{ nomad_authoritative_region }}"
         retry_max = {{ nomad_retry_max }}
         retry_interval = "{{ nomad_retry_interval }}"
     {% else -%}
-        start_join = [ {{ nomad_join_addresses }} ]
+        start_join = [{{ nomad_join_addresses }}]
     {%- endif %}
 {% endif %}
 
